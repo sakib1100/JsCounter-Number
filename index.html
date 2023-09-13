@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <p class="text">Java Script Counter</p>
+    <div class="container">
+
+            <span id="count">0</span>
+          
+           <div class="btnFunction">
+            <button id="mines">-</button>
+            <button id="reset">Reset</button>
+            <button id="plus">+</button>
+           </div>
+    </div>
+
+
+<script>
+    let count = 0;
+
+document.getElementById('reset').addEventListener('click',function(){
+    count =0;
+document.getElementById('count').innerHTML = count;
+})
+
+    document.getElementById('mines').addEventListener('click',function(){
+    count -=1;
+const number =  document.getElementById('count').innerHTML = count;
+})
+
+
+    document.getElementById('plus').addEventListener('click',function(){
+    count +=1;
+document.getElementById('count').innerHTML = count;
+})
+
+</script>
+
+
+
+</body>
+</html>
